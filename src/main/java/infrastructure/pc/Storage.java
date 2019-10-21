@@ -14,6 +14,8 @@ public class  Storage<T> {
 	int size;
 	int rear;
 
+
+
 	public Storage(int capacity) {
 		this.capacity = capacity;
 		buffer = (T[]) new Object[capacity];
@@ -41,7 +43,7 @@ public class  Storage<T> {
 					e.printStackTrace();
 				}
 			}
-			this.notify();
+			this.notifyAll();
 		}
 	}
 
